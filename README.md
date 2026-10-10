@@ -20,11 +20,9 @@ Cleaning and exploratory analysis of **1,067,371 transactions** from a UK-based 
 
 ## Repository structure
 ```
-├── data/
-│   ├── online_retail_09_10.csv.gz   # Dec 2009 – Dec 2010
-│   └── online_retail_10_11.csv.gz   # Dec 2010 – Dec 2011
-├── notebooks/
-│   └── online_retail_analysis.ipynb
+├── online_retail_09_10.csv.gz       # data: Dec 2009 – Dec 2010
+├── online_retail_10_11.csv.gz       # data: Dec 2010 – Dec 2011
+├── online_retail_analysis.ipynb     # analysis notebook
 ├── requirements.txt
 └── README.md
 ```
@@ -32,7 +30,7 @@ Cleaning and exploratory analysis of **1,067,371 transactions** from a UK-based 
 ## How to run
 ```bash
 pip install -r requirements.txt
-jupyter notebook notebooks/online_retail_analysis.ipynb
+jupyter notebook online_retail_analysis.ipynb
 ```
 pandas reads the `.csv.gz` files directly, so there is no need to unzip them.
 
